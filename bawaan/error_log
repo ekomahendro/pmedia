@@ -1,0 +1,6 @@
+[20-Jul-2025 10:59:11 UTC] PHP Warning:  Undefined variable $search in /home/u1775096/public_html/pmediaku.my.id/bawaan/index.php on line 123
+[20-Jul-2025 10:59:11 UTC] PHP Warning:  Undefined variable $items in /home/u1775096/public_html/pmediaku.my.id/bawaan/index.php on line 139
+[20-Jul-2025 10:59:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/u1775096/public_html/pmediaku.my.id/bawaan/index.php on line 139
+[20-Jul-2025 10:59:11 UTC] PHP Warning:  Undefined variable $summary in /home/u1775096/public_html/pmediaku.my.id/bawaan/index.php on line 192
+[20-Jul-2025 10:59:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/u1775096/public_html/pmediaku.my.id/bawaan/index.php on line 192
+[20-Jul-2025 11:06:37 UTC] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /home/u1775096/public_html/pmediaku.my.id/bawaan/index.php on line 3

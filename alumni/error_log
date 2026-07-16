@@ -1,0 +1,30 @@
+[16-May-2025 10:52:23 UTC] PHP Parse error:  syntax error, unexpected identifier "ferris_id" in /home/u1775096/public_html/pmediaku.my.id/complete_profile.php on line 11
+[16-May-2025 11:12:24 UTC] PHP Warning:  move_uploaded_file(uploads/2425.02.037 AYNA AZKA RABBANI (1).jpg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/complete_profile.php on line 29
+[16-May-2025 11:12:24 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpLqxXJP&quot; to &quot;uploads/2425.02.037 AYNA AZKA RABBANI (1).jpg&quot; in /home/u1775096/public_html/pmediaku.my.id/complete_profile.php on line 29
+[16-May-2025 11:13:15 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/google_login.php on line 4
+[16-May-2025 11:13:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u1775096/public_html/pmediaku.my.id/google_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/google_login.php on line 4
+[16-May-2025 11:13:38 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/google_login.php on line 4
+[16-May-2025 11:13:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u1775096/public_html/pmediaku.my.id/google_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/google_login.php on line 4
+[16-May-2025 12:22:36 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/google_login.php on line 4
+[16-May-2025 12:22:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u1775096/public_html/pmediaku.my.id/google_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/google_login.php on line 4
+[16-May-2025 12:24:07 UTC] PHP Warning:  move_uploaded_file(uploads/20220622_090426.jpg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/complete_profile.php on line 29
+[16-May-2025 12:24:07 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpMQrbbs&quot; to &quot;uploads/20220622_090426.jpg&quot; in /home/u1775096/public_html/pmediaku.my.id/complete_profile.php on line 29
+[16-May-2025 21:43:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reset_token' in 'SET' in /home/u1775096/public_html/pmediaku.my.id/forgot_password.php:15
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/forgot_password.php(15): mysqli->prepare()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/forgot_password.php on line 15
+[28-May-2025 06:50:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reset_token' in 'SET' in /home/u1775096/public_html/pmediaku.my.id/forgot_password.php:15
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/forgot_password.php(15): mysqli->prepare()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/forgot_password.php on line 15

@@ -1,0 +1,17 @@
+[05-Jan-2026 04:22:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u1775096_um2'@'localhost' to database 'u1775096_dm2' in /home/u1775096/public_html/pmediaku.my.id/gmj/koneksi.php:7
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/gmj/koneksi.php(7): mysqli_connect()
+#1 /home/u1775096/public_html/pmediaku.my.id/gmj/index.php(1): include('/home/u1775096/...')
+#2 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/gmj/koneksi.php on line 7
+[05-Jan-2026 04:26:12 UTC] PHP Warning:  Undefined variable $conn in /home/u1775096/public_html/pmediaku.my.id/gmj/index.php on line 45
+[05-Jan-2026 04:26:12 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/u1775096/public_html/pmediaku.my.id/gmj/index.php:45
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/gmj/index.php(45): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/gmj/index.php on line 45
+[05-Jan-2026 04:30:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/gmj/index.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/gmj/index.php(4): mysqli_connect()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/gmj/index.php on line 4

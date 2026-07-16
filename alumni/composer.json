@@ -1,0 +1,17 @@
+{
+    "name": "62821/alumni",
+    "autoload": {
+        "psr-4": {
+            "62821\\Alumni\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ekomahendro",
+            "email": "ekorabbani@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0"
+    }
+}

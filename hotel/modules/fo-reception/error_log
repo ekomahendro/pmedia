@@ -1,0 +1,85 @@
+[24-May-2026 14:09:49 UTC] PHP Parse error:  syntax error, unexpected identifier "PROSES", expecting "->" or "?->" or "{" or "[" in /home/u1775096/public_html/pmediaku.my.id/hotelnew/modules/fo-reception/index.php on line 11
+[24-May-2026 14:11:18 UTC] PHP Parse error:  syntax error, unexpected identifier "PROSES", expecting "->" or "?->" or "{" or "[" in /home/u1775096/public_html/pmediaku.my.id/hotelnew/modules/fo-reception/index.php on line 34
+[26-May-2026 06:59:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function move_uploaded_uploaded_file() in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 64
+[26-May-2026 07:00:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function move_uploaded_uploaded_file() in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 64
+[26-May-2026 07:02:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function move_uploaded_uploaded_file() in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 64
+[26-May-2026 07:09:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php:85
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php(85): mysqli_stmt_bind_param()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 85
+[26-May-2026 07:10:45 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php:85
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php(85): mysqli_stmt_bind_param()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 85
+[26-May-2026 07:12:18 UTC] PHP Parse error:  Unclosed '{' on line 39 in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 503
+[26-May-2026 07:12:25 UTC] PHP Parse error:  Unclosed '{' on line 39 in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 503
+[26-May-2026 07:12:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php:85
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php(85): mysqli_stmt_bind_param()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/index.php on line 85
+[26-May-2026 07:43:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_license' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:79
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(79): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 79
+[26-May-2026 07:50:33 UTC] PHP Warning:  Undefined variable $target_arr in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php on line 82
+[26-May-2026 07:59:58 UTC] PHP Warning:  Undefined variable $target_arr in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php on line 82
+[26-May-2026 08:38:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "b" in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php:177
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php on line 177
+[26-May-2026 08:38:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "b" in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php:177
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php on line 177
+[26-May-2026 08:38:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "b" in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php:177
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php on line 177
+[26-May-2026 08:39:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "b" in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php:177
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_arrangement.php on line 177
+[26-May-2026 14:27:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.htl_departments' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:103
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(103): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 103
+[26-May-2026 14:27:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.htl_departments' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:103
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(103): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 103
+[26-May-2026 14:29:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_license' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:107
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(107): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 107
+[26-May-2026 14:34:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'room_no' in 'ORDER BY' in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:106
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(106): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 106
+[26-May-2026 14:34:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'room_no' in 'ORDER BY' in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:106
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(106): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 106
+[26-May-2026 14:34:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'room_no' in 'ORDER BY' in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php:106
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php(106): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 106
+[26-May-2026 14:35:45 UTC] PHP Warning:  Undefined array key "room_no" in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/fo-reception/setup_master.php on line 346

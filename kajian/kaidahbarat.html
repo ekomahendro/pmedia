@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timeline: Pengaruh Islam → Renaisans → Modern Liberty (Interaktif)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--bg:#eef6ff;--blue:#0a4ead;--accent:#1f6feb;--muted:#556a85;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; background:var(--bg); color:#102236}
+    .wrap{max-width:1200px;margin:28px auto;padding:22px}
+    h1,h2{margin:0 0 12px}
+    h1{font-size:22px;color:var(--blue)}
+    p.lead{color:var(--muted);margin-top:6px}
+
+    /* controls */
+    .controls{display:flex;gap:10px;align-items:center;margin:16px 0}
+    .btn{background:var(--card);border:1px solid rgba(16,34,54,0.06);padding:8px 12px;border-radius:10px;cursor:pointer;color:var(--blue)}
+    .btn.active{background:linear-gradient(90deg,var(--blue),#2b6fd6);color:#fff;border-color:transparent}
+
+    .infocard{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));border-radius:12px;padding:18px;margin-top:8px;box-shadow:0 6px 24px rgba(12,34,70,0.06)}
+    .timeline-wrap{display:flex;gap:18px;align-items:flex-start}
+    .vis{flex:1;min-width:320px}
+    .legend{width:320px;flex:0 0 320px}
+
+    /* horizontal */
+    .timeline-h{position:relative;padding:28px 12px;display:flex;gap:20px;justify-content:space-between;align-items:center}
+    .rail{position:absolute;left:24px;right:24px;top:50%;height:10px;background:linear-gradient(90deg,var(--blue),#2b6fd6);border-radius:8px}
+    .phase{position:relative;width:200px;text-align:center}
+    .phase .bubble{background:var(--card);border:2px solid rgba(10,78,173,0.12);padding:12px;border-radius:12px;box-shadow:0 8px 24px rgba(12,34,70,0.06);transform:translateY(-60%);}
+    .phase .dot{width:22px;height:22px;border-radius:50%;background:linear-gradient(180deg,#ffd97a,#d6b34a);display:inline-block;margin-top:6px;box-shadow:0 6px 18px rgba(30,40,60,0.12)}
+    .phase h4{margin:8px 0 4px;font-size:14px;color:var(--blue)}
+    .phase p{margin:0;font-size:13px;color:var(--muted)}
+
+    /* vertical */
+    .timeline-v{display:none;padding:8px}
+    .v-item{display:flex;gap:12px;padding:14px;border-left:4px solid rgba(10,78,173,0.08);margin-left:6px;background:var(--card);border-radius:10px;margin-bottom:12px}
+    .v-item .v-dot{width:14px;height:14px;border-radius:50%;background:linear-gradient(180deg,#ffd97a,#d6b34a);margin-top:8px}
+    .v-item h4{margin:0;font-size:15px;color:var(--blue)}
+    .v-item p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    /* tooltip / detail panel */
+    .detail-panel{margin-top:14px;background:linear-gradient(180deg,#fff,#fbfdff);padding:14px;border-radius:10px;border:1px solid rgba(10,78,173,0.06)}
+    .detail-panel h3{margin:0 0 8px;color:var(--blue)}
+    .detail-grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:940px){.detail-grid{grid-template-columns:1fr 300px}}
+    .card-small{background:#f7fbff;padding:10px;border-radius:10px;border:1px solid rgba(16,34,54,0.04)}
+
+    /* bibliography */
+    .biblio{margin-top:12px}
+    .biblio li{margin:6px 0;color:var(--muted)}
+
+    /* animations: slide-in when mounted */
+    .phase, .v-item{opacity:0;transform:translateY(18px);transition:opacity 500ms ease,transform 500ms ease}
+    .show .phase, .show .v-item{opacity:1;transform:none}
+
+    /* responsive */
+    @media(max-width:900px){.timeline-wrap{flex-direction:column}.legend{width:100%;flex:0 0 auto}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Timeline — Pengaruh Islam → Renaissance → Modern Liberty</h1>
+      <p class="lead">Infografik interaktif plus penjelasan tokoh, fase tambahan, dan daftar pustaka untuk presentasi akademik.</p>
+    </header>
+
+    <div class="controls">
+      <button class="btn active" id="btnH">Horizontal</button>
+      <button class="btn" id="btnV">Vertikal</button>
+      <button class="btn" id="btnAll">Tampilkan Semua Penjelasan</button>
+    </div>
+
+    <div class="infocard" id="infocard">
+      <div class="timeline-wrap">
+        <div class="vis">
+
+          <!-- Horizontal timeline -->
+          <div class="timeline-h" id="timelineH">
+            <div class="rail"></div>
+
+            <div class="phase" data-key="golden"><div class="bubble"><i class="fa-solid fa-moon fa-lg" style="color:var(--blue)"></i><h4>622–900: Zaman Keemasan Islam</h4><p>Pusat ilmu: Baghdad (Bait al-Hikmah), matematika, kedokteran.</p></div><div class="dot"></div></div>
+
+            <div class="phase" data-key="and"><div class="bubble"><i class="fa-solid fa-landmark fa-lg" style="color:var(--blue)"></i><h4>800–1200: Andalusia & Sisilia</h4><p>Transfer pengetahuan ke Eropa melalui terjemahan & perdagangan.</p></div><div class="dot"></div></div>
+
+            <div class="phase" data-key="scholars"><div class="bubble"><i class="fa-solid fa-user-tie fa-lg" style="color:var(--blue)"></i><h4>900–1200: Ulama & Filosofi</h4><p>Ibn Sina, Al-Farabi, Ibn Rushd memperkaya logika & ilmu.</p></div><div class="dot"></div></div>
+
+            <div class="phase" data-key="trans"><div class="bubble"><i class="fa-solid fa-arrows-turn-to-dots fa-lg" style="color:var(--blue)"></i><h4>1100–1400: Transfer ke Barat</h4><p>Toledo School: terjemahan teks Arab → Latin; pengaruh Thomas Aquinas.</p></div><div class="dot"></div></div>
+
+            <div class="phase" data-key="renaiss"><div class="bubble"><i class="fa-solid fa-palette fa-lg" style="color:var(--blue)"></i><h4>1400–1600: Renaissance</h4><p>Humanisme & metode ilmiah berkembang; Copernicus & Descartes terpengaruh.</p></div><div class="dot"></div></div>
+
+            <div class="phase" data-key="enlight"><div class="bubble"><i class="fa-solid fa-lightbulb fa-lg" style="color:var(--blue)"></i><h4>1600–1800: Age of Enlightenment</h4><p>Locke, Montesquieu — konsep rule of law & hak individu berkembang.</p></div><div class="dot"></div></div>
+
+            <div class="phase" data-key="modern"><div class="bubble"><i class="fa-solid fa-scale-balanced fa-lg" style="color:var(--blue)"></i><h4>1800–sekarang: Modern Liberty</h4><p>Konstitusi, hukum sipil, dan HAM yang menjadi fondasi negara modern.</p></div><div class="dot"></div></div>
+
+          </div>
+
+          <!-- Vertical timeline -->
+          <div class="timeline-v" id="timelineV">
+            <div class="v-item" data-key="golden"><div class="v-dot"></div><div><h4>622–900: Zaman Keemasan Islam</h4><p>Rumah ilmu: Al-Khawarizmi (aljabar), Ibn Sina (kedokteran), Alhazen (optik).</p></div></div>
+            <div class="v-item" data-key="and"><div class="v-dot"></div><div><h4>800–1200: Andalusia & Sisilia</h4><p>Cordoba & Toledo jadi pusat terjemahan dan interaksi budaya.</p></div></div>
+            <div class="v-item" data-key="scholars"><div class="v-dot"></div><div><h4>900–1200: Ulama & Filsafat</h4><p>Ibn Rushd (Averroes) menafsirkan Aristoteles, merangsang filsafat Eropa.</p></div></div>
+            <div class="v-item" data-key="trans"><div class="v-dot"></div><div><h4>1100–1400: Transfer ke Barat</h4><p>Terjemahan bahasa Latin & pengajaran di universitas awal Eropa.</p></div></div>
+            <div class="v-item" data-key="renaiss"><div class="v-dot"></div><div><h4>1400–1600: Renaissance</h4><p>Pembaruan sains, seni, dan filsafat dengan akar pengaruh Islam.</p></div></div>
+            <div class="v-item" data-key="enlight"><div class="v-dot"></div><div><h4>1600–1800: Enlightenment</h4><p>Etika hukum & gagasan kebebasan individu mengambil bentuk modern.</p></div></div>
+            <div class="v-item" data-key="modern"><div class="v-dot"></div><div><h4>1800–sekarang: Modern Liberty</h4><p>Kebebasan beragama, rule of law, hak asasi, dan pendidikan modern.</p></div></div>
+          </div>
+
+        </div>
+
+        <aside class="legend">
+          <div class="card-small">
+            <h3>Highlights</h3>
+            <ul>
+              <li>Piagam Madinah &amp; tradisi hukum Islam → concept rule of law</li>
+              <li>Bait al-Hikmah &amp; ilmuwan Islam → sumber pengetahuan</li>
+              <li>Toledo School → jembatan intelektual ke Eropa</li>
+              <li>Renaissance &amp; Enlightenment → kelahiran modern liberty</li>
+            </ul>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="card-small">
+            <h4>Tokoh kunci</h4>
+            <p style="margin:6px 0 0">Al-Khawarizmi, Ibn Sina, Ibn Rushd, Alhazen, Al-Farabi — kontribusi mereka tercantum di panel penjelasan.</p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Detail panel (tooltips / explanation) -->
+      <div class="detail-panel" id="detail">
+        <div class="detail-grid">
+          <div>
+            <h3 id="detailTitle">Klik titik timeline untuk melihat penjelasan</h3>
+            <p id="detailText">Penjelasan singkat tentang peran setiap fase dan tokoh terkait akan muncul di sini.</p>
+            <h4>Ringkasan singkat tokoh</h4>
+            <ul id="figures">
+              <li><strong>Al-Khawarizmi</strong> — Bapak aljabar; karyanya memengaruhi matematika Eropa.</li>
+              <li><strong>Ibn Sina (Avicenna)</strong> — Canon of Medicine; teksnya digunakan 500+ tahun di Eropa.</li>
+              <li><strong>Ibn Rushd (Averroes)</strong> — Penafsiran Aristoteles; menghidupkan tradisi filsafat di Eropa.</li>
+              <li><strong>Alhazen (Ibn Al-Haytham)</strong> — Metode eksperimental dalam optik; kontribusi besar pada metode ilmiah.</li>
+            </ul>
+          </div>
+
+          <aside>
+            <div class="card-small">
+              <h4>Bibliografi & Sumber Singkat</h4>
+              <ul class="biblio">
+                <li>George Saliba — "Islamic Science and the Making of the European Renaissance"</li>
+                <li>Maria Rosa Menocal — "The Ornament of the World"</li>
+                <li>Jonathan Lyons — "The House of Wisdom"</li>
+                <li>Encyclopaedia Britannica (entries on Arabic science & Andalusia)</li>
+                <li>Firas Al-Khateeb — "Lost Islamic History"</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+    </div>
+
+    <footer style="margin-top:14px;color:var(--muted);font-size:13px">Generated interactive infographic — klik pada fase (dot/bubble) untuk melihat detail; gunakan tombol Horizontal / Vertical untuk tampilan.</footer>
+  </div>
+
+  <script>
+    // initial show class for animation
+    document.getElementById('infocard').classList.add('show');
+
+    // toggle H/V
+    const btnH = document.getElementById('btnH');
+    const btnV = document.getElementById('btnV');
+    const timelineH = document.getElementById('timelineH');
+    const timelineV = document.getElementById('timelineV');
+    btnH.addEventListener('click', ()=>{btnH.classList.add('active');btnV.classList.remove('active');timelineH.style.display='flex';timelineV.style.display='none'});
+    btnV.addEventListener('click', ()=>{btnV.classList.add('active');btnH.classList.remove('active');timelineH.style.display='none';timelineV.style.display='block'});
+
+    // show all explanations
+    document.getElementById('btnAll').addEventListener('click', ()=>{
+      const detail = document.getElementById('detail');
+      detail.scrollIntoView({behavior:'smooth'});
+    });
+
+    // interactive detail: clicking phases or v-items
+    const detailTitle = document.getElementById('detailTitle');
+    const detailText = document.getElementById('detailText');
+
+    function showDetail(key){
+      const map = {
+        golden: {
+          title: 'Zaman Keemasan Islam (c.622–900+)',
+          text: 'Pusat pembelajaran: Baghdad (Bait al-Hikmah). Tokoh: Al-Khawarizmi (aljabar), Ibn Sina (kedokteran), Alhazen (metode ilmiah). Karya mereka disimpan, disalin, dan menjadi sumber rujukan bagi sekolahan Eropa.'
+        },
+        and: {
+          title: 'Andalusia & Sisilia (c.800–1200)',
+          text: 'Cordoba, Toledo & Sicilian courts menjadi pusat transfer budaya. Teks-teks Arab diterjemahkan ke Latin, membuka akses bagi cendekiawan Kristen Eropa.'
+        },
+        scholars: {
+          title: 'Ulama & Filsafat (c.900–1200)',
+          text: 'Ibn Rushd (Averroes) menulis komentar pada Aristoteles yang memengaruhi Thomas Aquinas; Al-Farabi menulis teori politik yang sejajar dengan konsep kenegaraan di Barat.'
+        },
+        trans: {
+          title: 'Transfer ke Barat (c.1100–1400)',
+          text: 'Toledo School of Translators dan pusat-pusat akademis di Italia memperantarai masuknya matematika, optik, astronomi, dan kedokteran ke kurikulum universitas Eropa.'
+        },
+        renaiss: {
+          title: 'Renaissance (c.1400–1600)',
+          text: 'Humanisme dan metode ilmiah berkembang; tokoh-tokoh seperti Copernicus dan Galileo terinspirasi oleh warisan ilmiah Muslim.'
+        },
+        enlight: {
+          title: 'Age of Enlightenment (c.1600–1800)',
+          text: 'Filsafat politik modern (Locke, Montesquieu) mengambil ide rule of law dan pemerintahan berbasis hukum — gagasan yang memiliki preseden dalam tradisi hukum Islam.'
+        },
+        modern: {
+          title: 'Modern Liberty (1800–sekarang)',
+          text: 'Konstitusi, hak-hak sipil, dan institusi pendidikan modern terbentuk. Nilai-nilai seperti kebebasan beragama dan akuntabilitas pemimpin memiliki akar historis yang tumpang-tindih.'
+        }
+      };
+      const obj = map[key];
+      if(obj){detailTitle.textContent = obj.title; detailText.textContent = obj.text; document.getElementById('detail').scrollIntoView({behavior:'smooth'});}    }
+
+    // attach click
+    document.querySelectorAll('.phase').forEach(ph=>ph.addEventListener('click',()=>{showDetail(ph.dataset.key);}));
+    document.querySelectorAll('.v-item').forEach(v=>v.addEventListener('click',()=>{showDetail(v.dataset.key);}));
+  </script>
+</body>
+</html>

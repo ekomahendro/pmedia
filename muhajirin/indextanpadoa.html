@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Shalat Digital - Responsive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        html, body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: url('masjid2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .glass { 
+            background: rgba(0, 0, 0, 0.75); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255,255,255,0.15); 
+            border-radius: 1.25rem;
+        }
+
+        .jadwal-flex-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 0.5rem;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .card-shalat {
+            flex: 1;
+            min-width: 100px;
+            padding: 0.75rem 0.25rem;
+        }
+
+        .scroll-container {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+            min-height: 150px;
+        }
+
+        .scroll-content {
+            position: absolute;
+            width: 100%;
+            animation: scrollUp 40s linear infinite;
+        }
+
+        @keyframes scrollUp {
+            0% { top: 0; }
+            100% { transform: translateY(-50%); }
+        }
+
+        .marquee-container {
+            height: 50px;
+            overflow: hidden;
+            background: rgba(153, 27, 27, 0.9);
+            border-left: 8px solid #fbbf24;
+            display: flex;
+            align-items: center;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 35s linear infinite;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        .highlight { 
+            border: 3px solid #fbbf24; 
+            background: rgba(251, 191, 36, 0.25); 
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+        }
+
+        ::-webkit-scrollbar { width: 0px; }
+    </style>
+</head>
+<body>
+
+    <header class="glass flex flex-wrap justify-between items-center px-6 py-4 mb-4 gap-4">
+        <div class="flex items-center gap-4 min-w-[250px]">
+            <img src="muhajirin.png" alt="Logo" class="h-16 w-16 object-contain">
+            <div>
+                <h1 id="m-nama" class="text-xl md:text-2xl font-black text-yellow-500 uppercase leading-none">MEMUAT...</h1>
+                <p id="m-info" class="text-[10px] md:text-xs mt-1 opacity-80 font-bold"></p>
+            </div>
+        </div>
+        
+        <div class="text-center px-4 border-l-0 md:border-l border-white/20">
+            <div class="text-[10px] uppercase font-black tracking-widest text-yellow-500 italic">Menuju <span id="next-name">-</span></div>
+            <div id="countdown" class="text-3xl md:text-5xl font-mono font-black text-white leading-none mt-1">00:00:00</div>
+        </div>
+
+        <!-- Bagian Masehi Diperlebar karena Hijriah dihapus -->
+        <div class="text-center px-4 border-l-0 md:border-l border-white/20">
+            <div class="text-[10px] uppercase font-black tracking-widest text-yellow-500 italic">Tanggal</div>
+            <div id="tgl-masehi" class="text-xl md:text-2xl font-bold uppercase text-white mt-1"></div>
+        </div>
+        
+        <div class="text-right min-w-[120px]">
+            <div id="jam" class="text-5xl md:text-6xl font-mono font-black text-white tracking-tighter">00:00</div>
+            <div class="text-sm font-black text-yellow-500 tracking-widest">WITA</div>
+        </div>
+    </header>
+
+    <main class="flex flex-col lg:flex-row gap-4 flex-1 overflow-hidden">
+        <div class="flex flex-col gap-4 lg:w-[73%]">
+            <div id="jadwal-container" class="jadwal-flex-row"></div>
+            
+            <div class="flex flex-col md:flex-row gap-4 flex-1 overflow-hidden">
+                <div class="glass p-5 flex-1 bg-black/40 flex flex-col justify-center text-center">
+                    <h4 class="text-yellow-500 font-black text-lg mb-2 border-b border-yellow-500/30 pb-1 uppercase italic">Visi</h4>
+                    <p id="v-teks" class="text-sm md:text-base font-semibold italic text-white"></p>
+                </div>
+                
+                <div class="glass p-5 flex-[1.5] bg-black/40 flex flex-col min-h-[200px]">
+                    <h4 class="text-yellow-500 font-black text-lg mb-3 border-b border-yellow-500/30 pb-1 uppercase italic text-center">Misi</h4>
+                    <div class="scroll-container">
+                        <ul id="m-scroll-list" class="scroll-content text-sm md:text-base space-y-2 font-semibold px-2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="glass p-5 flex flex-col lg:w-[27%] min-h-[250px]">
+            <h3 class="text-lg font-black text-yellow-500 border-b-2 border-yellow-500 pb-2 mb-4 text-center uppercase tracking-widest">Takmir Masjid</h3>
+            <div class="scroll-container">
+                <div id="takmir-scroll-content" class="scroll-content space-y-3 w-full px-1"></div>
+            </div>
+        </aside>
+    </main>
+
+    <div class="marquee-container shadow-2xl">
+        <div id="running-text" class="marquee-text">...</div>
+    </div>
+
+    <script>
+        const KOTA_ID = "1709"; 
+        let dataGlobal = {};
+        let jadwalShalat = {};
+
+        async function init() {
+            await loadData();
+            await fetchJadwal();
+            setInterval(updateClock, 1000);
+            setInterval(fetchJadwal, 3600000);
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch('data.json?t=' + Date.now());
+                dataGlobal = await res.json();
+                document.getElementById('m-nama').innerText = dataGlobal.masjid.nama;
+                document.getElementById('m-info').innerText = dataGlobal.masjid.alamat;
+                document.getElementById('running-text').innerText = dataGlobal.pengumuman;
+                document.getElementById('v-teks').innerText = dataGlobal.visi;
+
+                const mContent = document.getElementById('m-scroll-list');
+                const mHtml = dataGlobal.misi.map(m => `
+                    <li class="flex items-start bg-white/5 p-2 rounded-lg border-l-2 border-yellow-500/50">
+                        <i class="fas fa-check-circle text-yellow-500 mt-1 mr-2 text-xs shrink-0"></i>
+                        <span>${m}</span>
+                    </li>
+                `).join('');
+                mContent.innerHTML = mHtml + mHtml;
+
+                const tContent = document.getElementById('takmir-scroll-content');
+                const tHtml = dataGlobal.takmir.map(t => `
+                    <div class="bg-white/10 p-3 rounded-xl border-l-4 border-yellow-500 shadow-lg">
+                        <div class="font-black text-[9px] text-yellow-500 uppercase tracking-wider">${t.jabatan}</div>
+                        <div class="text-sm font-bold text-white leading-tight">${t.nama}</div>
+                    </div>
+                `).join('');
+                tContent.innerHTML = tHtml + tHtml; 
+            } catch (e) { console.error("Error loadData"); }
+        }
+
+        async function fetchJadwal() {
+            try {
+                const d = new Date();
+                const res = await fetch(`https://api.myquran.com/v2/sholat/jadwal/${KOTA_ID}/${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`);
+                const json = await res.json();
+                if (json.status && json.data) {
+                    const j = json.data.jadwal;
+                    document.getElementById('tgl-masehi').innerText = d.toLocaleDateString('id-ID', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
+                    
+                    jadwalShalat = { "Subuh": j.subuh, "Terbit": j.terbit, "Dhuha": j.dhuha, "Dzuhur": j.dzuhur, "Ashar": j.ashar, "Maghrib": j.maghrib, "Isya": j.isya };
+                    const icons = { Subuh: 'fa-cloud-moon', Terbit: 'fa-sun', Dhuha: 'fa-cloud-sun', Dzuhur: 'fa-certificate', Ashar: 'fa-cloud-sun', Maghrib: 'fa-moon', Isya: 'fa-star-and-crescent' };
+
+                    document.getElementById('jadwal-container').innerHTML = Object.keys(jadwalShalat).map(k => `
+                        <div id="card-${k}" class="glass card-shalat flex flex-col items-center text-center transition-all duration-500 shadow-lg">
+                            <i class="fas ${icons[k]} text-2xl mb-1 text-yellow-500"></i>
+                            <h4 class="font-black text-[9px] opacity-70 uppercase tracking-widest">${k}</h4>
+                            <div class="text-2xl md:text-3xl font-black text-white leading-none my-1">${jadwalShalat[k]}</div>
+                            ${['Terbit', 'Dhuha'].includes(k) ? '' : `<div class="text-[8px] font-bold text-yellow-200 uppercase truncate w-full px-1">Imam: ${dataGlobal.imam ? dataGlobal.imam[k] : '-'}</div>`}
+                        </div>
+                    `).join('');
+                }
+            } catch (e) { console.error("Error fetchJadwal"); }
+        }
+
+        function updateClock() {
+            const now = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Makassar"}));
+            document.getElementById('jam').innerText = now.toLocaleTimeString('id-ID', {hour12: false, hour: '2-digit', minute: '2-digit'});
+
+            let nextName = ""; let nextTime = null;
+            for (const [name, time] of Object.entries(jadwalShalat)) {
+                const [h, m] = time.split(':');
+                const target = new Date(now);
+                target.setHours(parseInt(h), parseInt(m), 0);
+                if (target > now) { nextName = name; nextTime = target; break; }
+            }
+            if (!nextTime) {
+                const [h, m] = (jadwalShalat.Subuh || "04:30").split(':');
+                nextTime = new Date(now); nextTime.setDate(now.getDate() + 1); nextTime.setHours(parseInt(h), parseInt(m), 0);
+                nextName = "Subuh";
+            }
+
+            document.getElementById('next-name').innerText = nextName;
+            const diff = nextTime - now;
+            const h = Math.floor(diff/3600000); const m = Math.floor((diff%3600000)/60000); const s = Math.floor((diff%60000)/1000);
+            document.getElementById('countdown').innerText = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+
+            document.querySelectorAll('[id^="card-"]').forEach(el => el.classList.remove('highlight'));
+            const active = document.getElementById(`card-${nextName}`);
+            if(active) active.classList.add('highlight');
+        }
+
+        init();
+    </script>
+</body>
+</html>

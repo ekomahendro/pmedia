@@ -1,0 +1,38 @@
+[12-Oct-2025 08:50:43 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 89
+[12-Oct-2025 08:50:43 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:50:43 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:50:43 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:50:43 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:50:43 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:50:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php:18
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php(18): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php on line 18
+[12-Oct-2025 08:51:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php:18
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php(18): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php on line 18
+[12-Oct-2025 08:51:38 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 89
+[12-Oct-2025 08:51:38 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:51:38 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:51:38 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:51:38 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:51:38 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:53:16 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 89
+[12-Oct-2025 08:53:16 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:53:16 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:53:16 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:53:16 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:53:16 UTC] PHP Warning:  Undefined array key "status" in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 116
+[12-Oct-2025 08:55:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'SELECT' in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php:117
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php(117): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/dashboard.php on line 117
+[22-Oct-2025 14:04:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php:75
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php(75): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/fashion/admin/edit_produk.php on line 75

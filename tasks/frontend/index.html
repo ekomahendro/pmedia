@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Proyek & Tugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- SIDEBAR: Manajemen Project -->
+        <aside class="sidebar">
+            <h2>Proyek</h2>
+            <form id="project-form">
+                <input type="text" id="project-input" placeholder="Nama proyek baru..." required>
+                <button type="submit">+ Proyek</button>
+            </form>
+            <ul id="project-list">
+                <!-- Project diisi dinamis oleh JS -->
+            </ul>
+        </aside>
+
+        <!-- KONTEN UTAMA: Manajemen Tugas -->
+        <main class="main-content">
+            <header>
+                <h1 id="active-project-title">Pilih atau Buat Proyek</h1>
+                <p id="active-project-desc"></p>
+            </header>
+
+            <!-- Form Tambah/Edit Tugas (Disembunyikan jika belum pilih proyek) -->
+            <section id="task-section" class="hidden">
+                <form id="task-form">
+                    <input type="hidden" id="task-id">
+                    <div class="form-group">
+                        <input type="text" id="task-title" placeholder="Nama tugas..." required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="task-desc" placeholder="Keterangan tugas..."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" id="task-duedate" required>
+                        <select id="task-status">
+                            <option value="Pending">Pending</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                        <button type="submit" id="btn-submit-task">Simpan Tugas</button>
+                    </div>
+                </form>
+
+                <!-- Daftar Tugas -->
+                <div id="task-list" class="task-grid">
+                    <!-- Kartu tugas diisi dinamis oleh JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* =============================================================
+   1. Variabel dan Dasar
+============================================================= */
+:root {
+    /* Palet Warna */
+    --primary-bg: #212529; /* Latar Belakang Utama (Hitam Gelap) */
+    --secondary-bg: #2c3034; /* Latar Belakang Sekunder/Card */
+    --tertiary-bg: #1a1a1a; /* Latar Belakang Navbar/Footer */
+    --text-light: #f8f9fa; /* Teks Utama Putih/Terang */
+    --accent-color: #00bcd4; /* Warna Aksen (Cyan/Turquoise - Terlihat Teknologi) */
+    --accent-hover: #00e5ff;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-light);
+    font-family: 'Arial', sans-serif; /* Font default yang profesional */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+/* =============================================================
+   2. Navbar dan Hero/Slider
+============================================================= */
+.navbar {
+    background-color: var(--tertiary-bg) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow lembut */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-color) !important; /* Warna aksen pada Brand */
+}
+
+/* Slider/Carousel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.7); /* Sedikit redup agar teks lebih menonjol jika ditambahkan */
+}
+
+/* =============================================================
+   3. Bagian Konten (About Us & More About Us)
+============================================================= */
+.description-section,
+.footer-description {
+    background-color: var(--secondary-bg);
+    padding: 60px 0; /* Padding lebih besar */
+}
+
+.description-section h2,
+.footer-description h4 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Garis bawah tipis di judul section */
+.description-section h2::after,
+.footer-description h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+/* =============================================================
+   4. Image Boxes / Portofolio (Card Styling)
+============================================================= */
+
+/* Container untuk menjaga tata letak */
+.container.my-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.col-md-4 a {
+    text-decoration: none; /* Hilangkan garis bawah pada tautan box */
+    color: inherit;
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Border tipis */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Pastikan card memiliki tinggi yang sama */
+}
+
+/* Efek hover profesional */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-color);
+}
+
+.box-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-title {
+    color: var(--accent-color);
+}
+
+/* =============================================================
+   5. Footer dan Social Links
+============================================================= */
+.footer {
+    background-color: var(--tertiary-bg) !important;
+    padding: 30px 0;
+    border-top: 3px solid var(--accent-color); /* Garis aksen di atas footer */
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.social-links a {
+    color: var(--text-light) !important;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-hover) !important;
+    text-decoration: none;
+}
+
+/* =============================================================
+   6. Responsif (Opsional, tapi penting)
+============================================================= */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    .description-section,
+    .footer-description {
+        padding: 40px 0;
+    }
+}

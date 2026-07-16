@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="110" fill="#0b1329"/>
+  <rect x="12" y="12" width="488" height="488" rx="98" fill="none" stroke="#1e293b" stroke-width="6"/>
+
+  <defs>
+    <linearGradient id="gold-big" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(256, 230) scale(2.4)">
+    <circle cx="0" cy="0" r="45" fill="#111827" stroke="url(#gold-big)" stroke-width="4"/>
+    <polygon points="0,-15 14,-5 9,12 -9,12 -14,-5" fill="url(#gold-big)"/>
+    <path d="M0,-15 L0,-45 M14,-5 L35,-25 M9,12 L25,35 M-9,12 L-25,35 M-14,-5 L-35,-25" stroke="url(#gold-big)" stroke-width="3"/>
+  </g>
+
+  <text x="256" y="410" text-anchor="middle" font-family="'Inter', sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="4">WORLD CUP</text>
+  <text x="256" y="455" text-anchor="middle" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#fbbf24" letter-spacing="6">2026</text>
+</svg>

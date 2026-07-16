@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Eko Mahendro Prastyanto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #38bdf8; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <section class="min-h-screen flex items-center justify-center px-6 py-20">
+        <div class="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="relative group mx-auto md:mx-0">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl bg-slate-800">
+                    <img src="https://via.placeholder.com/400x600" alt="Eko Mahendro Prastyanto" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="space-y-6 text-center md:text-left">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-2">Eko Mahendro Prastyanto</h1>
+                    <p class="text-xl md:text-2xl font-medium gradient-text">IT Manager</p>
+                    <p class="text-slate-400 mt-2 flex items-center justify-center md:justify-start gap-2">
+                        <i class="fas fa-hotel text-blue-400"></i> Grand Istana Rama Hotel Kuta
+                    </p>
+                </div>
+                
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-full font-semibold transition">Contact Me</a>
+                    <a href="#portfolio" class="px-6 py-3 glass hover:bg-white/10 rounded-full font-semibold transition">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 underline decoration-blue-500 underline-offset-8">Key Expertise & Infrastructure</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-concierge-bell text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hotel Operations</h3>
+                    <p class="text-slate-400 mb-4">Pengelolaan sistem inti operasional hotel secara end-to-end.</p>
+                    <span class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm font-semibold italic">PMS Hotel VHP Specialist</span>
+                </div>
+
+                <div class="glass p-8 rounded-3xl card-hover md:scale-105 border-blue-500/30">
+                    <div class="w-14 h-14 bg-cyan-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <ul class="text-slate-400 text-sm space-y-2 mb-4">
+                        <li><i class="fas fa-globe text-xs mr-2 text-cyan-400"></i> grandistanarama.co</li>
+                        <li><i class="fas fa-glass-cheers text-xs mr-2 text-cyan-400"></i> 69barandresto.com</li>
+                        <li><i class="fas fa-utensils text-xs mr-2 text-cyan-400"></i> rokkyu.com</li>
+                        <li><i class="fas fa-store text-xs mr-2 text-cyan-400"></i> warunkcucimata.com</li>
+                        <li class="italic">& Many sub-domains...</li>
+                    </ul>
+                </div>
+
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <div class="w-14 h-14 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-2xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Infrastructure</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Manajemen skala besar untuk: <br>
+                        <strong>90</strong> Ruiji Access Points <br>
+                        <strong>220</strong> Vivotek CCTV Cameras <br>
+                        <strong>LAN</strong> Office & Google System.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-white mb-1">220+</div>
+                    <div class="text-slate-500 text-sm uppercase">CCTV Vivotek</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-1">90+</div>
+                    <div class="text-slate-500 text-sm uppercase">Access Points</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-1">10+</div>
+                    <div class="text-slate-500 text-sm uppercase">Web Projects</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-1">100%</div>
+                    <div class="text-slate-500 text-sm uppercase">Google System</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">© 2026 Eko Mahendro Prastyanto | IT Infrastructure Portfolio</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Dark Elegant theme */
+body { background: #0b1020; color: #e6eef6; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.04); }
+.btn-primary { background: #1e88e5; border-color: #1e88e5; }
+.table-dark { background: rgba(255,255,255,0.02); }
+.table-striped>tbody>tr:nth-of-type(odd)>* { background-color: rgba(255,255,255,0.01); }
+a.btn-link { color: #90caf9; }
+
+/* ensure dark table text visible */
+table.table-dark tbody tr td, table.table-dark tbody tr th { color: #e8eef6 !important; }
+.btn-outline-primary { color: #9fc9ff; border-color: rgba(159,201,255,0.12); }

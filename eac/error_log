@@ -1,0 +1,6 @@
+[22-Nov-2025 20:23:49 UTC] PHP Parse error:  syntax error, unexpected variable "$files" in /home/u1775096/public_html/pmediaku.my.id/eac/installer_eac.php on line 286
+[22-Nov-2025 20:55:53 UTC] PHP Parse error:  syntax error, unexpected variable "$files" in /home/u1775096/public_html/pmediaku.my.id/eac/installer_eac.php on line 324
+[22-Nov-2025 20:55:55 UTC] PHP Parse error:  syntax error, unexpected variable "$files" in /home/u1775096/public_html/pmediaku.my.id/eac/installer_eac.php on line 324
+[22-Nov-2025 21:07:36 UTC] PHP Warning:  file_get_contents(/home/u1775096/public_html/pmediaku.my.id/eac/eac/db.sql): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/eac/installer_eac.php on line 492
+[23-Nov-2025 04:56:52 UTC] PHP Warning:  Undefined array key "delta_cr" in /home/u1775096/public_html/pmediaku.my.id/eac/export_csv.php on line 26
+[23-Nov-2025 04:56:52 UTC] PHP Warning:  Undefined array key "is_stable" in /home/u1775096/public_html/pmediaku.my.id/eac/export_csv.php on line 29

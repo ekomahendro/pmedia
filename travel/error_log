@@ -1,0 +1,136 @@
+[15-May-2026 11:48:49 UTC] PHP Warning:  Undefined array key "role" in /home/u1775096/public_html/pmediaku.my.id/travel/admin.php on line 3
+[15-May-2026 11:49:03 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:49:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:49:03 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:49:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:49:59 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:49:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:49:59 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:49:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:50:06 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:50:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:50:06 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:50:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:51:28 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:51:28 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 16
+[15-May-2026 11:51:28 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[15-May-2026 11:51:28 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/travel/login.php on line 17
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 142
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 150
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 153
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 142
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 150
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 153
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 142
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 150
+[16-May-2026 01:20:38 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 153
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:18 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:31 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 78
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 83
+[16-May-2026 01:29:35 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 84
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:31:31 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:22 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:25 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:33 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "nama" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 188
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:32:42 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:37:39 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:37:39 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:37:39 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:37:39 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:37:39 UTC] PHP Warning:  Undefined array key "tgl_berangkat" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 193
+[16-May-2026 01:37:39 UTC] PHP Warning:  Undefined array key "jumlah" in /home/u1775096/public_html/pmediaku.my.id/travel/admin_bookings.php on line 194
+[16-May-2026 01:46:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.tra_users' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php:156
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php(156): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php on line 156
+[16-May-2026 01:46:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.tra_users' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php:156
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php(156): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php on line 156
+[16-May-2026 01:47:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_user' in 'ORDER BY' in /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php:156
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php(156): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/travel/manageuser.php on line 156
+[18-May-2026 01:24:12 UTC] PHP Warning:  Undefined variable $user_role in /home/u1775096/public_html/pmediaku.my.id/travel/admin.php on line 10
+[18-May-2026 01:25:10 UTC] PHP Warning:  Undefined variable $session_role in /home/u1775096/public_html/pmediaku.my.id/travel/admin.php on line 10
+[18-May-2026 05:56:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.tra_booking' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php:22
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php(22): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php on line 22
+[18-May-2026 05:56:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.tra_booking' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php:22
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php(22): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php on line 22
+[18-May-2026 06:18:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'u1775096_dinvit.tra_booking' doesn't exist in /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php:22
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php(22): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/travel/cek_kuota.php on line 22

@@ -1,0 +1,111 @@
+[16-Apr-2026 09:05:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/login.php:3
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/login.php(3): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/login.php on line 3
+[16-Apr-2026 09:08:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php:3
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php(3): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 3
+[16-Apr-2026 09:13:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php:3
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php(3): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 3
+[16-Apr-2026 09:13:54 UTC] PHP Warning:  Undefined array key "user" in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[16-Apr-2026 09:18:30 UTC] PHP Fatal error:  Uncaught Error: Class "Auth" not found in /home/u1775096/public_html/pmediaku.my.id/pdf/logout.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/logout.php on line 5
+[17-Apr-2026 00:54:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/login.php:3
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/login.php(3): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/login.php on line 3
+[17-Apr-2026 01:01:44 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 14
+[17-Apr-2026 01:01:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php:15
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php(15): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 15
+[17-Apr-2026 01:02:03 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 36
+[17-Apr-2026 01:02:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 36
+[17-Apr-2026 01:02:03 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 39
+[17-Apr-2026 01:02:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 39
+[17-Apr-2026 01:02:03 UTC] PHP Warning:  Undefined variable $wa_link in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 43
+[17-Apr-2026 01:04:30 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 40
+[17-Apr-2026 01:04:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 40
+[17-Apr-2026 01:04:30 UTC] PHP Warning:  Undefined variable $row in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 43
+[17-Apr-2026 01:04:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 43
+[17-Apr-2026 01:04:30 UTC] PHP Warning:  Undefined variable $wa_link in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 47
+[17-Apr-2026 01:06:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php(4): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 4
+[17-Apr-2026 01:07:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php(4): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 4
+[17-Apr-2026 01:07:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php(4): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 4
+[17-Apr-2026 01:07:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php(4): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 4
+[17-Apr-2026 03:02:01 UTC] PHP Warning:  Undefined array key "user" in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[17-Apr-2026 03:02:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php(4): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 4
+[17-Apr-2026 03:03:43 UTC] PHP Warning:  move_uploaded_file(uploads/profile_1776395023.jpg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 26
+[17-Apr-2026 03:03:43 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpfkyLfG' to 'uploads/profile_1776395023.jpg' in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 26
+[17-Apr-2026 03:04:38 UTC] PHP Warning:  move_uploaded_file(uploads/profile_1776395078.png): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 26
+[17-Apr-2026 03:04:38 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php8gn1eq' to 'uploads/profile_1776395078.png' in /home/u1775096/public_html/pmediaku.my.id/pdf/profile.php on line 26
+[17-Apr-2026 05:07:26 UTC] PHP Warning:  Undefined array key "user" in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[17-Apr-2026 05:17:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php:4
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php(4): mysqli->__construct()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[17-Apr-2026 05:32:05 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php on line 6
+[17-Apr-2026 05:32:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php on line 6
+[17-Apr-2026 05:32:05 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php:11
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php(11): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php on line 11
+[17-Apr-2026 05:33:14 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php on line 6
+[17-Apr-2026 05:33:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php on line 6
+[17-Apr-2026 05:33:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php:11
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php(11): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/pdf/save_progress.php on line 11
+[17-Apr-2026 06:24:50 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:24:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:27:00 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:27:00 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:27:10 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:27:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:28:07 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:28:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:29:28 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:29:28 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:29:36 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:29:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:30:05 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:30:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:34:00 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 06:34:00 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/u1775096/public_html/pmediaku.my.id/pdf/reader.php on line 4
+[17-Apr-2026 21:41:51 UTC] PHP Warning:  Undefined array key "user" in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[19-Apr-2026 10:00:15 UTC] PHP Warning:  Undefined array key "user" in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[19-Apr-2026 11:07:04 UTC] PHP Warning:  Undefined array key "user" in /home/u1775096/public_html/pmediaku.my.id/pdf/admin.php on line 4
+[19-Apr-2026 11:10:45 UTC] PHP Parse error:  Unmatched '}' in /home/u1775096/public_html/pmediaku.my.id/pdf/index.php on line 249

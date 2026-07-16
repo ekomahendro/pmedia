@@ -1,0 +1,5 @@
+[28-May-2026 09:08:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'status' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/restaurant/index.php:6
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/hotel/modules/restaurant/index.php(6): mysqli->query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/hotel/modules/restaurant/index.php on line 6

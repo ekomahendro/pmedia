@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi Konsep Website Amalan Harian & Database Anggota</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 10px 0 0;
+            font-size: 2.5em;
+        }
+        .nav-links {
+            padding-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #ffffff; /* White background for visibility */
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.1s;
+            border: 1px solid #007bff;
+        }
+        .btn:hover {
+            background-color: #eaf3ff;
+            transform: translateY(-1px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 20px;
+            border-left: 5px solid #007bff;
+            background-color: #eaf3ff;
+            border-radius: 5px;
+        }
+        h2 {
+            /* Membuat judul bisa diklik */
+            cursor: pointer; 
+            user-select: none; /* Mencegah teks terpilih saat diklik */
+            color: #007bff;
+            background-color: #cce0ff; /* Warna latar belakang untuk area klik */
+            padding: 15px;
+            margin: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom: 2px solid #007bff;
+        }
+        /* Konten yang akan di-toggle */
+        .section-content {
+            display: none; /* HIDDEN BY DEFAULT */
+            padding: 10px 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #ffffff;
+            margin-bottom: 8px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+        }
+        strong {
+            color: #333;
+        }
+        .role-list li {
+            background-color: #d1ecf1;
+            border-left: 4px solid #007bff;
+        }
+        .amalan-list li {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+        .interaksi-list li {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-links">
+            <a href="https://pmediaku.my.id" class="btn">🏠 Home</a>
+            <a href="https://pmediaku.my.id/amalan" class="btn">🚀 Demo</a>
+        </div>
+        <h1>Aplikasi Pencatatan Amalan Harian & Database Anggota PIB</h1>
+        <p>Konsep Sistem Manajemen Anggota dan Amalan</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2 class="section-title">📝 Fungsi Utama Website (Klik untuk melihat detail)</h2>
+            <div class="section-content">
+                <p>Website ini memiliki dua fungsi inti:</p>
+                <ul>
+                    <li><strong>Pencatatan Amalan Harian:</strong> Memfasilitasi anggota untuk mencatat dan memantau amalan harian mereka.</li>
+                    <li><strong>Database Anggota SBK:</strong> Mengelola data anggota dengan struktur keanggotaan berjenjang (Anggota dan Pembina).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">👥 Manajemen Anggota & Peran (Klik untuk melihat detail)</h2>
+            <div class="section-content">
+                <p>Struktur keanggotaan dan hak akses:</p>
+                <ul class="role-list">
+                    <li><strong>Pendaftaran:</strong> Hanya bisa dilakukan oleh <strong>Super Admin</strong> atau <strong>Anggota yang berstatus Pembina</strong>.</li>
+                    <li><strong>Data Awal Anggota:</strong> Username, Full Name, dan Password (disimpan dengan <em>hashing</em>).</li>
+                    <li><strong>Reset Password:</strong> Anggota bisa merubah sendiri, atau diubah oleh Pembinanya.</li>
+                    <li><strong>Kenaikan Status:</strong> Anggota bisa menjadi Pembina jika dinaikkan statusnya oleh Pembina lain.</li>
+                    <li><strong>Relasi Pembina:</strong> Tiap anggota **pasti punya 1 Pembina**, walaupun anggota tersebut juga sudah berstatus Pembina.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">🎯 Fitur Khusus Pembina (Klik untuk melihat detail)</h2>
+            <div class="section-content">
+                <p>Hak akses dan kemampuan yang dimiliki oleh Pembina:</p>
+                <ul class="amalan-list">
+                    <li><strong>Pengaturan Amalan Grup:</strong> Tiap grup Pembina (anggotanya) memiliki <strong>list amalan harian dan targetnya sendiri</strong> yang disiapkan oleh Pembina.</li>
+                    <li><strong>Monitoring Anggota:</strong> Pembina dapat melihat **Profile, Capaian Amalan Harian** anggotanya dalam bentuk <strong>Tabel dan Grafik</strong>. <em>(Sesama anggota tidak bisa saling lihat)</em>.</li>
+                    <li><strong>Komunikasi:</strong> Pembina bisa <strong>mengirimkan pesan</strong> kepada masing-masing anggotanya.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">👤 Fitur Khusus Anggota (Klik untuk melihat detail)</h2>
+            <div class="section-content">
+                <p>Kemampuan dan data yang bisa diakses Anggota:</p>
+                <ul class="interaksi-list">
+                    <li><strong>Update Data Diri:</strong> Anggota bisa melakukan update sendiri: <strong>Foto Profile, CV, dan Amalan Harian</strong>.</li>
+                    <li><strong>Pencatatan Amalan:</strong> Melakukan update/input amalan harian.</li>
+                    <li><strong>Balas Pesan:</strong> Anggota bisa <strong>me-reply pesan</strong> dari Pembinanya.</li>
+                    <li><strong>History Amalan:</strong> History amalan harian <strong>tetap bisa dilihat anggota</strong>, walaupun sudah dikeluarkan dari grup.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">🔁 Mekanisme Pergantian Pembina (Klik untuk melihat detail)</h2>
+            <div class="section-content">
+                <p>Aturan mengenai pemutusan dan perekrutan Pembina:</p>
+                <ul>
+                    <li><strong>Dikeluarkan dari Grup:</strong> Jika Pembina mengeluarkan anggotanya, nama Pembina tersebut akan tercatat sebagai <strong>Last Pembina</strong>.</li>
+                    <li><strong>Perekrutan Ulang:</strong> Anggota tersebut dapat memiliki Pembina lagi jika **direkrut oleh Pembina lainnya** atau oleh <strong>Pembina sebelumnya</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Pilih semua judul yang memiliki class 'section-title'
+            const titles = document.querySelectorAll('.section-title');
+
+            titles.forEach(title => {
+                // Tambahkan event listener untuk setiap judul
+                title.addEventListener('click', function() {
+                    // Ambil elemen konten (div dengan class 'section-content') yang berada tepat setelah judul
+                    const content = this.nextElementSibling;
+
+                    if (content && content.classList.contains('section-content')) {
+                        // Cek apakah konten sedang ditampilkan (display: block)
+                        if (content.style.display === 'block') {
+                            // Jika sedang ditampilkan, sembunyikan (hide)
+                            content.style.display = 'none';
+                        } else {
+                            // Jika sedang tersembunyi, tampilkan (show)
+                            content.style.display = 'block';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

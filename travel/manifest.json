@@ -1,0 +1,16 @@
+{
+  "name": "Maluku Paradise Travel",
+  "short_name": "MPT",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e293b",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "logomaluku.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

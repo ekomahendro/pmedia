@@ -1,0 +1,23 @@
+<?php
+// Fungsi untuk memproses order dengan banyak item
+function createOrder($data) {
+    global $conn;
+    // 1. Insert Header
+    $sql = "INSERT INTO htl_restaurant_orders (id_outlet, guest_name, table_number, order_date, status) VALUES (?,?,?,NOW(),'pending')";
+    // ... eksekusi dan ambil $id_order ...
+    
+    // 2. Insert Items (Looping)
+    foreach ($data['items'] as $item) {
+        $sql_item = "INSERT INTO htl_restaurant_order_items (id_order, id_menu, qty, price_at_order) VALUES (?,?,?,?)";
+        // ... eksekusi ...
+    }
+}
+
+// Fungsi Split Bill (Logika pemisahan)
+function splitBill($id_order, $items_to_split, $split_name) {
+    global $conn;
+    // 1. Hitung total dari items_to_split
+    // 2. Insert ke htl_restaurant_split_bills
+    // 3. Tandai item di htl_restaurant_order_items sebagai "split"
+}
+?>

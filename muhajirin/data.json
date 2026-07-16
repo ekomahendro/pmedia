@@ -1,0 +1,97 @@
+{
+    "masjid": {
+        "nama": "MASJID  AL-MUHAJIRIN",
+        "alamat": "Sanggulan, Kec. Kediri, Tabanan Bali",
+        "telp": "0819-1330-8837"
+    },
+    "visi": "Menjadikan masjid sebagai pusat ibadah, dakwah dan pemberdayaan umat mewujudkan masyarakat yang beriman, berilmu dan sejahtera.",
+    "misi": [
+        "Meningkatkan kualitas ibadah jamaah dengan pembinaan keimanan dan ketakwaan",
+        "Menyelenggarakan pendidikan dan dakwah Islam yang mencerdaskan serta membentuk akhlaq mulia masyarakat.",
+        "Mengembangkan kepedulian sosial dengan santunan dan bantuan bagi masyarakat yang membutuhkan.",
+        "Menjadikan masjid sebagai pusat persatuan dan kebersamaan umat, tempat musyawarah, ukhuwah serta penguatan silaturahmi.",
+        "Menciptakan lingkungan masjid yang aman, nyaman, bersih dan sebagai pusat aktifitas keagamaan."
+    ],
+    "pengumuman": "Selamat Datang di Masjid Al Muhajirin. Mohon luruskan shaf dan matikan handphone saat shalat .",
+    "imam": {
+        "Subuh": "Ust. Harun",
+        "Dzuhur": "Ust. Ali Mahzum",
+        "Ashar": "Ust. Mahmudi",
+        "Maghrib": "Ust.Dian Mislan ",
+        "Isya": "Ust.Muflihin "
+    },
+    "takmir": [
+        {
+            "nama": "Purwoko,S.Sos",
+            "jabatan": "Penanggung Jawab"
+        },
+        {
+            "nama": "Ir. Yani Nur Syamsu,M.Sc",
+            "jabatan": "Ketua Umum"
+        },
+        {
+            "nama": "Abdul Cholik",
+            "jabatan": "Wakil Ketua"
+        },
+        {
+            "nama": "Ust Dian Mislan Al Hafidz",
+            "jabatan": "Wakil Ketua 2"
+        },
+        {
+            "nama": "Drs.Djuwarno",
+            "jabatan": "Bendahara 1"
+        },
+        {
+            "nama": "Ali Akbar Munadi",
+            "jabatan": "Bendahara 2"
+        },
+        {
+            "nama": "Mas'ud",
+            "jabatan": "Sekretaris 1"
+        },
+        {
+            "nama": "Moh Osman Mansyur",
+            "jabatan": "Sekretaris 2"
+        },
+        {
+            "nama": "Eko Yonas S",
+            "jabatan": "Koordinator Bidang Idarah"
+        },
+        {
+            "nama": "Zakirman",
+            "jabatan": "Anggota Bidang Idarah"
+        },
+        {
+            "nama": "Ust Syarifuddin",
+            "jabatan": "Koordinator Bidang Imarah"
+        },
+        {
+            "nama": "Ust Mahfudz",
+            "jabatan": "Anggota Bidang Imarah"
+        },
+        {
+            "nama": "Hadi Prayitno",
+            "jabatan": "Anggota Bidang Imarah"
+        },
+        {
+            "nama": "Antok Sugianto",
+            "jabatan": "Koordinator Bidang Riayah"
+        },
+        {
+            "nama": "Arifin",
+            "jabatan": "Anggota Bidang Riayah"
+        },
+        {
+            "nama": "Suryanto",
+            "jabatan": "Anggota Bidang Riayah"
+        },
+        {
+            "nama": "Arbain",
+            "jabatan": "Anggota Bidang Riayah"
+        },
+        {
+            "nama": "Warno",
+            "jabatan": "Anggota Bidang Riayah"
+        }
+    ]
+}

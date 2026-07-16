@@ -1,0 +1,5 @@
+[12-Oct-2025 08:48:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'status' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/fashion/index.php:46
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/fashion/index.php(46): mysqli_query()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/fashion/index.php on line 46

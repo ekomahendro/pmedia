@@ -1,0 +1,80 @@
+[01-Feb-2026 05:23:46 UTC] PHP Warning:  include(navbar.php): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 54
+[01-Feb-2026 05:23:46 UTC] PHP Warning:  include(): Failed opening 'navbar.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 54
+[01-Feb-2026 05:54:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 4078 Illegal parameter data types bigint and row for operation '+' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:35
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 35
+[01-Feb-2026 05:55:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 4078 Illegal parameter data types row and row for operation '+' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:35
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 35
+[01-Feb-2026 06:04:31 UTC] PHP Warning:  move_uploaded_file(../assets/uploads/kk_1_1769925871.jpg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:04:31 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phptBGzer' to '../assets/uploads/kk_1_1769925871.jpg' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:05:42 UTC] PHP Warning:  move_uploaded_file(../assets/uploads/kk_1_1769925942.jpg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:05:42 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php8LqK86' to '../assets/uploads/kk_1_1769925942.jpg' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:05:47 UTC] PHP Warning:  move_uploaded_file(../assets/uploads/kk_1_1769925947.jpg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:05:47 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phppXhI0Q' to '../assets/uploads/kk_1_1769925947.jpg' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:06:24 UTC] PHP Warning:  move_uploaded_file(../assets/uploads/kk_1_1769925984.jpeg): Failed to open stream: No such file or directory in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[01-Feb-2026 06:06:24 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpmMqsYw' to '../assets/uploads/kk_1_1769925984.jpeg' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/warga_detail.php on line 30
+[02-Feb-2026 20:55:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:43
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(43): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 43
+[02-Feb-2026 21:24:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:43
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(43): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 43
+[02-Feb-2026 21:29:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 21:30:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 21:30:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 21:31:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'SELECT' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 21:31:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'SELECT' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 22:03:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 22:03:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 22:03:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[02-Feb-2026 22:03:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wilayah' in 'WHERE' in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
+[15-Mar-2026 10:18:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php:47
+Stack trace:
+#0 /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php(47): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u1775096/public_html/pmediaku.my.id/rwm/pages/dashboard.php on line 47
